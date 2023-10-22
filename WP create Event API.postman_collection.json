@@ -1,0 +1,290 @@
+{
+	"info": {
+		"_postman_id": "bbcf00f1-8ea4-4964-a4d3-dd6ae775eafd",
+		"name": "WP create Event API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27302183"
+	},
+	"item": [
+		{
+			"name": "wp/create/event",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "Shopify event With Chat",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "https://crystal.zehntech.net/",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "14/05/2023 10:20 PM",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "14/05/2023 11:20 PM",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "video_link",
+							"value": "https://crystal.zehntech.net/",
+							"type": "text"
+						},
+						{
+							"key": "banner_image",
+							"value": "https://crystal.zehntech.net/",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "show_public",
+							"value": "0",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "anonymous_chat",
+							"value": "1",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "system_message",
+							"value": "0",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "store_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "host_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "test_event",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "49",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "0:30",
+							"type": "text"
+						},
+						{
+							"key": "cover_image",
+							"value": "https://crystal.zehntech.net/",
+							"type": "text"
+						},
+						{
+							"key": "banner_image_file",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "cover_image_file",
+							"value": "false",
+							"type": "text"
+						},
+						{
+							"key": "by_offer",
+							"value": "true",
+							"type": "text"
+						},
+						{
+							"key": "offer_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/wp/create/event",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"wp",
+						"create",
+						"event"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "wp/update/event/{event_key}",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "OLX123",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "cccdf",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "11/04/2023 8:00 AM",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "end_time",
+							"value": "11/04/2023 8:00 PM",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "video_link",
+							"value": "https://www.itsolutionstuff.com/post/laravel-url-validation-rule-exampleexample.html",
+							"type": "text"
+						},
+						{
+							"key": "banner_image",
+							"description": "required",
+							"type": "file",
+							"src": "KVgJ3d5D7/big_buck_bunny_720p_2mb.mp4"
+						},
+						{
+							"key": "show_public",
+							"value": "1",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "anonymous_chat",
+							"value": "1",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "system_message",
+							"value": "1",
+							"description": "required",
+							"type": "text"
+						},
+						{
+							"key": "host_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "product_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "3",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "0:30",
+							"type": "text"
+						},
+						{
+							"key": "test_event",
+							"value": "0",
+							"type": "text"
+						},
+						{
+							"key": "cover_image",
+							"type": "file",
+							"src": "0W_wp5ee_/MicrosoftTeams-image (2).png"
+						},
+						{
+							"key": "store_id",
+							"value": "5",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "{{base_url}}/wp/update/event/UyMT3KTMht",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"wp",
+						"update",
+						"event",
+						"UyMT3KTMht"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

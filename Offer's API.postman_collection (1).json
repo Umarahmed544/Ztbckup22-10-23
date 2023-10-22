@@ -1,0 +1,438 @@
+{
+	"info": {
+		"_postman_id": "3aec0b95-23b3-4e1f-9804-8ae50c0cdcd5",
+		"name": "Offer's API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "26374337",
+		"_collection_link": "https://dark-rocket-4589.postman.co/workspace/Crystal_ball_tenant~cea9204f-a63d-47a4-8037-cab4f684a041/collection/26374337-3aec0b95-23b3-4e1f-9804-8ae50c0cdcd5?action=share&creator=26374337&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "create/offers",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "fh",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "fh",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "17/07/2023 12:00 AM",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "[{\n  \"id\": 1,\n  \"name\": \"<product_id_value>\"\n},\n{\n  \"id\": 2,\n  \"name\": \"<product_id_value>\"\n}\n]",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/create/offer"
+			},
+			"response": []
+		},
+		{
+			"name": "update/offer/{offer_id}",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "test update",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "test inf",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "14/07/2023 03:48 AM",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "120",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "[\n  {\n    \"id\": 1,\n    \"name\": \"teset\"\n  }\n]",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/update/offer/10"
+			},
+			"response": []
+		},
+		{
+			"name": "get/offer/{offer_id}",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/get/offer/11"
+			},
+			"response": []
+		},
+		{
+			"name": "delete/offer/{offer_id}",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/delete/offer/9"
+			},
+			"response": []
+		},
+		{
+			"name": "offer/{offer_id}/confirm",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/offer/1/confirm"
+			},
+			"response": []
+		},
+		{
+			"name": "offer/{offer_id}/cancel",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "2",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "influencer_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "store_type_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "title",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "start_time",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "duration",
+							"value": "",
+							"type": "text"
+						},
+						{
+							"key": "products",
+							"value": "",
+							"type": "text"
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/offer/1/cancel"
+			},
+			"response": []
+		},
+		{
+			"name": "get/product/list",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "secret-key",
+						"value": "{{secret_key}}",
+						"type": "text"
+					},
+					{
+						"key": "api-type",
+						"value": "1",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "consumer_secret",
+							"value": "cs_c1900df4c2234b4f198c5d3919e8541b00c2b8de",
+							"description": "wp key",
+							"type": "text"
+						},
+						{
+							"key": "consumer_key",
+							"value": "ck_eda7b846302b7f1d2604bc60b7703a246166d0e2",
+							"description": "wp key",
+							"type": "text"
+						},
+						{
+							"key": "shope_url",
+							"value": "",
+							"description": "shpify key",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "access_token",
+							"value": "",
+							"description": "shopify key",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "access_token",
+							"value": "",
+							"description": "magento",
+							"type": "text",
+							"disabled": true
+						}
+					]
+				},
+				"url": "{{base_url}}/wp/get/product/list"
+			},
+			"response": []
+		}
+	]
+}

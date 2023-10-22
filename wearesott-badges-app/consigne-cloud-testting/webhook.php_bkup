@@ -1,0 +1,16 @@
+<?php 
+ini_set('display_errors', 1);
+
+$rootDir = realpath($_SERVER["DOCUMENT_ROOT"]);
+
+$req = $_REQUEST;
+
+$filename = date('d-m-Y').'-'.time().'_tetst.json';
+
+$filename = date('d-m-Y').'-'.time().'_tetst.json';
+
+// file_put_contents($rootDir."/consigne-cloud-testting/$filename",json_encode($req));
+//echo json_encode($req);
+
+$fh = fopen('php://stdin','r') or die($php_errormsg); while($s = fgets($fh,1024)) { print "You typed: $s"; } 
+
